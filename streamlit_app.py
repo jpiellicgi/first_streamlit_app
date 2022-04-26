@@ -40,3 +40,7 @@ my_cur.execute("SELECT * FROM fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_rows)
+
+# allow the user to add a fruit to the list
+add_my_fruit = streanlit.text_input('What fruit would you like to add?','jackfruit')
+streamlit.text("Thanks for adding " + add_my_fruit)
